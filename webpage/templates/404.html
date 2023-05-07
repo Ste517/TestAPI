@@ -4,7 +4,16 @@
 
 {% block content %}
 
-<h1>There's been a problem</h1>
-<h2>Couldn't find the file you requested</h2>
+<div class="topnav">
+    <a href="/">Index</a>
+    <label style="margin: 7px;" class="switch">
+        <input type="checkbox"></input>
+        <span id="slider" onclick="themeSwitch()" class="slider round"></span>
+    </label>
+</div>
+<div style="padding: 16px">
+    <h1>There's been a problem</h1>
+    <h2>Couldn't find the file you requested</h2>
+</div>
 
 {% endblock %}
