@@ -6,4 +6,4 @@ def index(request):
 
 def schoolcountdown(request):
     result = DateCalculator((2023,6,10),weekmask="1111110",holidays=["2023-06-10"]).calculate()
-    return HttpResponse(result)
+    return HttpResponse(result, content_type="text/plain")
