@@ -1,0 +1,11 @@
+{% load static %}
+<div class="topnav">
+    <a class="active" href="#">{{ title }}</a>
+    {% for x in titles %}
+        <a href="{{ x }}">{{x}}</a>
+    {% endfor %}
+    <label style="margin: 7px;" class="switch">
+        <input type="checkbox"></input>
+        <span id="slider" onclick="themeSwitch()" class="slider round"></span>
+    </label>
+</div>

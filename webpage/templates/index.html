@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html>
-<body>
+{% extends "master.html" %}
 
-<h1>Hello World!</h1>
-<p>Welcome to my first Django project!</p>
+{% block title %}Main Page{% endblock %}
 
-</body>
-</html>
+{% block content %}
+
+{% include "navbar.html" with title="Index" %}
+<h1>Giorni alla fine della scuola: {{ days }}</h1>
+
+{% endblock %}
