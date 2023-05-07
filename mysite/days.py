@@ -6,7 +6,7 @@ class DateCalculator():
             self,  
             endDate: tuple, 
             startDate: tuple = None,
-            weekmask: str | list = None, 
+            weekmask: str = None, 
             holidays: list = None
         ):
         if startDate is None:
